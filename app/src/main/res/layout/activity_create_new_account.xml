@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateNewAccount">
+
+    <ProgressBar
+        android:id="@+id/SingnUp_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="NewApi"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/signUp_email_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="youremail@example.com"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"/>
+    <EditText
+        android:id="@+id/signUp_password_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/signUp_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:layout_gravity="center"
+        android:onClick="SignUp"
+        />
+
+</LinearLayout>
